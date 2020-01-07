@@ -21,7 +21,7 @@ const userRoutes = (app) => {
         .get((req, res)=>{
             const users = getUsers()
 
-            res.send({ users })
+            res.render('../views/users', {users: users})
         })
         .post((req, res)=> {
             const users = getUsers()
