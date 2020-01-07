@@ -22,6 +22,6 @@ app.get('/contact', (req, res) => {
     res.render('contact', {title: 'Contact'})
 })
 
-app.listen(port, ()=>{
+app.listen(process.env.PORT || port, ()=>{
     console.log(`api rodando na porta ${port}`)
 })
